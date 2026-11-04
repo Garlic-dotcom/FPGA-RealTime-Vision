@@ -1,0 +1,74 @@
+{
+    "args": [
+        "-o",
+        "cmos_dcfifo",
+        "--base_path",
+        "D:\\develop\\mygit\\fpgachina\\efinix\\sobel\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "memory",
+            "name": "efx_fifo_top",
+            "version": "7.3"
+        }
+    ],
+    "conf": {
+        "SYNC_CLK": "0",
+        "SYNC_STAGE": "2",
+        "DEPTH_2": "12",
+        "DATA_WIDTH": "8",
+        "MODE": "\"STANDARD\"",
+        "OUTPUT_REG": "0",
+        "PROG_FULL_ASSERT": "4",
+        "PROGRAMMABLE_FULL": "\"NONE\"",
+        "PFN_INTERNAL": "3",
+        "PEA_INTERNAL": "0",
+        "PEN_INTERNAL": "0",
+        "PROGRAMMABLE_EMPTY": "\"NONE\"",
+        "OPTIONAL_FLAGS": "0",
+        "PIPELINE_REG": "1",
+        "ASYM_WIDTH_RATIO": "4",
+        "BYPASS_RESET_SYNC": "0",
+        "ENDIANESS": "0",
+        "RAM_STYLE": "\"block_ram\"",
+        "OVERFLOW_PROTECT": "0",
+        "UNDERFLOW_PROTECT": "0"
+    },
+    "output": {
+        "external_source_source": [
+            "cmos_dcfifo\\cmos_dcfifo_define.vh",
+            "cmos_dcfifo\\cmos_dcfifo_tmpl.vhd",
+            "cmos_dcfifo\\cmos_dcfifo.v",
+            "cmos_dcfifo\\cmos_dcfifo_tmpl.v"
+        ],
+        "external_example_example": [
+            "cmos_dcfifo\\T20F256_devkit\\fifo_demo.peri.xml",
+            "cmos_dcfifo\\T20F256_devkit\\fifo_demo.xml",
+            "cmos_dcfifo\\T20F256_devkit\\fifo_demo_top.v",
+            "cmos_dcfifo\\T20F256_devkit\\fifo_demo_T20.sdc",
+            "cmos_dcfifo\\T20F256_devkit\\efx_symmetric_width_fifo_top.v",
+            "cmos_dcfifo\\T20F256_devkit\\cmos_dcfifo.v",
+            "cmos_dcfifo\\T20F256_devkit\\cmos_dcfifo_define.vh"
+        ],
+        "external_example_2": [
+            "cmos_dcfifo\\Ti60F225_devkit\\fifo_demo.peri.xml",
+            "cmos_dcfifo\\Ti60F225_devkit\\fifo_demo.xml",
+            "cmos_dcfifo\\Ti60F225_devkit\\fifo_demo_top.v",
+            "cmos_dcfifo\\Ti60F225_devkit\\fifo_demo_Ti60.sdc",
+            "cmos_dcfifo\\Ti60F225_devkit\\efx_symmetric_width_fifo_top.v",
+            "cmos_dcfifo\\Ti60F225_devkit\\cmos_dcfifo.v",
+            "cmos_dcfifo\\Ti60F225_devkit\\cmos_dcfifo_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "cmos_dcfifo\\Testbench\\fifo_tb.sv",
+            "cmos_dcfifo\\Testbench\\xrun.sh",
+            "cmos_dcfifo\\Testbench\\msim.sh",
+            "cmos_dcfifo\\Testbench\\flist",
+            "cmos_dcfifo\\Testbench\\modelsim.do",
+            "cmos_dcfifo\\Testbench\\cmos_dcfifo.v",
+            "cmos_dcfifo\\Testbench\\cmos_dcfifo_define.vh"
+        ]
+    },
+    "sw_version": "2024.2.294",
+    "generated_date": "2026-08-31T08:59:36.447329+00:00"
+}

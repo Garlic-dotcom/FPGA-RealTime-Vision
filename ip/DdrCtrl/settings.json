@@ -1,0 +1,91 @@
+{
+    "args": [
+        "-o",
+        "DdrCtrl",
+        "--base_path",
+        "D:\\develop\\mygit\\fpgachina\\efinix\\reference\\10_Ti60_OV5640_HDMI_1280720\\ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "memory_controller",
+            "name": "efx_ddr3_soft_controller",
+            "version": "5.13"
+        }
+    ],
+    "conf": {
+        "data_width": "1",
+        "freq": "384",
+        "col": "10",
+        "row": "16",
+        "bank": "3",
+        "burst_length": "8",
+        "read_burst_type": "1'b0",
+        "cas_latency": "5",
+        "dll_reset": "1",
+        "precharge_pd": "1'b1",
+        "dll_enable": "1'b1",
+        "output_drive_strength": "1'b0",
+        "al": "0",
+        "qoff": "1'b1",
+        "rtt": "3",
+        "asr": "1'b0",
+        "srt": "1'b0",
+        "dynamic_odt": "0",
+        "mpr_rf": "0",
+        "mpr": "1'b0",
+        "tREFI": "7800",
+        "arbiter_init": "1",
+        "arbiter_count": "4",
+        "write_leveling": "1'b0",
+        "tdqs": "1'b0",
+        "DDR3_DATA_RATE": "1",
+        "DDR3_MODE": "2",
+        "READ_ENABLE_PIPELINE": "7",
+        "PLL_OUT_SEL": "4"
+    },
+    "output": {
+        "external_source_source": [
+            "DdrCtrl\\DdrCtrl_define.vh",
+            "DdrCtrl\\DdrCtrl_tmpl.vhd",
+            "DdrCtrl\\DdrCtrl.v",
+            "DdrCtrl\\DdrCtrl_tmpl.v"
+        ],
+        "external_example_example": [
+            "DdrCtrl\\Ti180J484_devkit\\constraint.sdc",
+            "DdrCtrl\\Ti180J484_devkit\\memory_checker_axi.v",
+            "DdrCtrl\\Ti180J484_devkit\\example_top.v",
+            "DdrCtrl\\Ti180J484_devkit\\DdrCtrl.v",
+            "DdrCtrl\\Ti180J484_devkit\\DdrCtrl_define.vh",
+            "DdrCtrl\\Ti180J484_devkit\\ti180_ddr3_controller.xml",
+            "DdrCtrl\\Ti180J484_devkit\\ti180_ddr3_controller.peri.xml"
+        ],
+        "external_script_generator": [],
+        "external_testbench_ncsim": [
+            "DdrCtrl\\Testbench\\ncsim\\DdrCtrl.v"
+        ],
+        "external_testbench_synopsys": [
+            "DdrCtrl\\Testbench\\synopsys\\DdrCtrl.v"
+        ],
+        "external_testbench_testbench": [
+            "DdrCtrl\\Testbench\\ddr3.v",
+            "DdrCtrl\\Testbench\\efx_ddr3_soft_controller_tb.v",
+            "DdrCtrl\\Testbench\\efx_iddr.v",
+            "DdrCtrl\\Testbench\\efx_oddr.v",
+            "DdrCtrl\\Testbench\\4096Mb_ddr3_parameters.vh",
+            "DdrCtrl\\Testbench\\efx_srl8.v",
+            "DdrCtrl\\Testbench\\axi_modelsim.do",
+            "DdrCtrl\\Testbench\\memory_checker_axi.v",
+            "DdrCtrl\\Testbench\\example_top.v",
+            "DdrCtrl\\Testbench\\ddr3_device_ID.vh",
+            "DdrCtrl\\Testbench\\ddr3_controller.bin",
+            "DdrCtrl\\Testbench\\ddr3_controller.vh",
+            "DdrCtrl\\Testbench\\DdrCtrl.v",
+            "DdrCtrl\\Testbench\\DdrCtrl_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "DdrCtrl\\Testbench\\modelsim\\DdrCtrl.v"
+        ]
+    },
+    "sw_version": "2024.2.294",
+    "generated_date": "2026-08-28T09:25:04.582144+00:00"
+}
